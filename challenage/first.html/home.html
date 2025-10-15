@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/* niche wala 
+.niche{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-books{
+    max-width: 900px;
+    margin: 50px;
+    background: linear-gradient(135deg, #7b2ff7,#f107a3);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.books-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.items{
+    background: white;
+    color: #242424;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0 ,0 ,0 ,0.2);
+    text-align: center;
+    transition: transfrom 0.3s;
+}
+
+.items img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.items p{
+    font-weight: bold;
+    color: #5a2ff7;
+    margin: 0;
+    
+}*/
+
+.header button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #884b05;
+    border: 2px;
+    background-color: blue;
+    border-radius: 12px;
+    
+    margin-left: 60px;
+}
+
+.header .free {
+    font-size: medium;
+    text-transform: capitalize;
+    text-align: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+}
+.topper{
+   margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.topper .right{
+   padding-right: 50px;
+}
+.topper .right{
+    mix-blend-mode: multiply;
+    width: auto;
+    height: auto;
+}
+.topper .left{
+    padding-left: 50px;
+}
+.topper .left{
+    text-align: top;
+
+}
+
+.main-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns:repeat(1, 1fr) ;
+}
+@media( min-width:650px){
+    .main-container{
+       grid-template-columns:repeat(2 , 1fr) ;
+    }
+}
+@media( min-width:1000px){
+    .main-container{
+       grid-template-columns:repeat(3 , 1fr) ;
+    }
+}
+@media( min-width:1200pxpx){
+    .main-container{
+       grid-template-columns:repeat(4, 1fr) ;
+    }
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+@media (min-width:750px){
+    .card-image-container{
+        height: 16rem;
+    }
+}
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card-container:hover .card-image{
+    transform: scale(1.2) ;
+    transition-duration: 0.2s;
+
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #02252b;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.card-title-anchor:hover .card-title{
+    color: blue;
+}
+.card-body{
+    color: #000000;
+    font-size: 1rem;
+
+}
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-container button{
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: rgba(3, 9, 100, 0.795);
+    display: block;
+   position: relative;
+   margin: 0 auto;
+   top: -20px;
+    margin-left: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="free">
+        <h1> YOU CAN READ THIS ALL BOOKS . </h1>    
+</div>
+ 
+  <!--back button-->
+<div class="button">
+  <a href="library.html"> <button>BACK</button></a> 
+</div>
+</div>
+    <section>
+<div class="topper">
+    <div class="left">
+<h1>
+ A library is not only a place to store Books but also a hub of Knowledge and Learning.
+</h1>
+</br>
+<h2>
+The main Aim of library Services is to promote Reading Habits, spread Knowledge, support Education, </br>and provide Equal access to Infromation for Everyone...
+</h2>
+</div>
+</br>
+<div class="right">
+<img src="images (7).jpeg">
+</div>
+
+</div></section>
+
+  <section class="main-container">
+    <!-- 1-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (1).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Business Management</h2>
+        </a>
+        <p class="card-body">
+    BBA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--1-end-here-->
+
+  <!-- 2-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images.jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Business Management</h2>
+        </a>
+        <p class="card-body">
+    BBM students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--2-end-here-->
+  <!-- 3-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (6).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--3-end-here-->
+  <!-- 4-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (5).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--4-end-here-->
+  <!-- 5-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (4).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer program</h2>
+        </a>
+        <p class="card-body">
+    BCA or BBM students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--5-end-here-->
+  <!-- 6-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (3).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer Application</h2>
+        </a>
+        <p class="card-body">
+    BBM or BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--6-end-here-->
+  <!-- 7-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (2).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--7-end-here-->
+  <!-- 8-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="images (1).jpeg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Business management</h2>
+        </a>
+        <p class="card-body">
+    BBM or BBA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--8-end-here-->
+  <!-- 9-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="c-programming-language-2023.png" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+    
+            <h2 class="title">Computer Program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--9-end-here-->
+  <!-- 10-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="64a70b69d6305a19312f5859-sql-3-books-1-the-ultimate-beginner.jpg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer Program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--10-end-here-->
+  <!-- 11-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="61+NJ5jhf1L._UF1000,1000_QL80_.jpg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer Program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--11-end-here-->
+  <!-- 12-card-start-->
+<div class="card-container">
+    <a href="#" class="card-image-container">
+        <img src="51xiwRkS2oL._UF1000,1000_QL80_.jpg" alt="1-image" class="card-image" 
+        loading="lazy"/>
+    </a>
+    <div class="card-title">
+        <a href="#" class="card-title-anchor">
+            <h2 class="title">Computer Program</h2>
+        </a>
+        <p class="card-body">
+    BCA students
+        </p>
+    </div>
+    <div class="card-footer-container">
+    <a href="https://en.wikipedia.org/wiki/Library" class="footer-container"> <button>
+       LEARN MORE 
+    </button></a>
+    </div>
+</div>
+<!--12-end-here-->
+
+
+  </section>
+</body>
+</html>
